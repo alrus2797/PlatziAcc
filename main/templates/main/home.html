@@ -54,7 +54,7 @@
   {% for u in users %}
     <div class="user {% if not user.using_account and u.using_account %}warn{% elif user.using_account and u.using_account %}own{% endif %}">
       <div class="inline-block">
-        <img style="border-radius: 50%; padding-top: 6px" src="{{u.picture}}">
+        <img style="border-radius: 50px; padding-top: 6px" src="{{u.picture}}">
       </div>
       <div class="inline-block name-block">
       <label class="username">{{u.first_name}}</label><br>
